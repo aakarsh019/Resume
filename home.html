@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aakarsh - Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Halcyon
+        <div class="contact_info">
+          halcyon.hy@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          +13456764598
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="https://e0.pxfuel.com/wallpapers/487/966/desktop-wallpaper-kaneki-ken-chibi-tokyo-ghoul-chibi.jpg" class="profile_image"/>
+    </div>
+
+    <div>
+        <h1>
+          Hi, I'm Halcyon! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+        </h1>
+        <p>
+          An Enthusiastic, Optimistic, and Hard-Working Individual. Extremely motivated to constantly hone my skills and grow
+          professionally. Proficient in English, Hindi, and German
+        </p>
+    </div>
+  </section>
+            
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>  
+      
+      <div class="skill">
+        <img src="html_finalprojimages/java.png"/>
+        <h6>Java</h6>
+        <p>2 years experience</p>
+      </div>  
+      
+      <div class="skill">
+        <img src="html_finalprojimages/matlab.png"/>
+        <h6>MATLAB</h6>
+        <p>2 years experience</p>
+      </div>  
+
+      <!-- Add more skills -->
+
+    </div>
+  </section>
+        
+  <!-- Projects -->
+  <section class="project-card" id="projects">
+    <h2>Projects</h2>
+    <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Gallery Applet</h3>
+          <ul>
+            <li>Developed a gallery applet using Java. </li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Educative Applet</h3>
+          <ul>
+            <li>Developed an educative applet for students in schools.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>School Final batch Website</h3>
+          <ul>
+            <li>Created a website for our final batch in school</li>
+          </ul>
+        </div>
+  </div>
+  </section>
+  <div style="clear:both;"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="recommendation" id="all_recommendations">
+      <!-- Recommendations will be added dynamically using JavaScript -->
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>          
+        <input type="text" id="recommendation-name" placeholder="Name (Optional)"> <br/>
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </a>
+  </div>
+
+  <div class="popup" id="popup" class="flex_center">
+    <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <h3>Thanks for leaving a recommendation</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+</html>
+
